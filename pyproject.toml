@@ -1,0 +1,21 @@
+[project]
+name = "marketplace-backend"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ahmadhooshmand1", email = "ahmad.hooshmand10@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "email-validator>=2.4.0",
+    "fastapi>=0.165.0",
+    "psycopg[binary,pool]>=3.3.9",
+    "pydantic-settings>=2.16.3",
+    "pyjwt>=2.15.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+marketplace-backend = "marketplace_backend:main"
+
